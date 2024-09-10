@@ -8,7 +8,8 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
   RUN gem update --system
 WORKDIR /app
 COPY ./src /app
-RUN bundle config --local set path 'vendor/bundle' \
+RUN bundle config set path 'vendor/bundle' \
+  && bundle config set deployment true \
   && bundle install
 
 COPY start.sh /start.sh
