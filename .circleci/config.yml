@@ -30,6 +30,9 @@ jobs:
     steps:
       - checkout:
           path: ~/rails-application-0906
+      - run:
+          name: Clear Bundler Cache
+          command: bundle clean --force
       - ruby/install-deps
       - run:
           name: Install dependencies
