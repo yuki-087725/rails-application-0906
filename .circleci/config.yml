@@ -42,6 +42,9 @@ jobs:
           name: Bundle Install
           command: bundle install
       - run:
+          name: Database create
+          command: bundle exec rails db:create
+      - run:
           name: Database setup
           command: bundle exec rails db:migrate
       - run:
