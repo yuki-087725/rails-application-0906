@@ -39,9 +39,6 @@ jobs:
           name: Install Bundler
           command: gem install bundler:2.5.18     
       - run:
-          name: Install dependencies
-          command: bundle install
-      - run:
           name: Database create
           command: bundle exec rails db:create
       - run:
