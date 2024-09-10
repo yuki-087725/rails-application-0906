@@ -11,6 +11,9 @@ jobs:
     steps:
       - checkout:
           path: ~/rails-application-0906
+      - run:
+          name: Install Bundler
+          command: gem install bundler:2.5.18
       - ruby/install-deps
 
   test:
@@ -31,12 +34,12 @@ jobs:
       - checkout:
           path: ~/rails-application-0906
       - run:
-          name: Clear Bundler Cache
-          command: bundle clean --force
-      - ruby/install-deps
-      - run:
           name: Install Bundler
           command: gem install bundler:2.5.18     
+      # - run:
+      #     name: Clear Bundler Cache
+      #     command: bundle clean --force
+      - ruby/install-deps
       - run:
           name: Install dependencies
           command: bundle install
