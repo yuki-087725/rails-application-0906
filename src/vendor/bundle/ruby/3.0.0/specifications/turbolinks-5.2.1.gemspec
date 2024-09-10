@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "turbolinks".freeze
+<<<<<<< HEAD
   s.version = "5.2.1"
+=======
+  s.version = "5.2.1".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "source_code_uri" => "https://github.com/turbolinks/turbolinks-rails" } if s.respond_to? :metadata=
@@ -14,6 +18,7 @@ Gem::Specification.new do |s|
   s.email = "david@loudthinking.com".freeze
   s.homepage = "https://github.com/turbolinks/turbolinks".freeze
   s.licenses = ["MIT".freeze]
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "Turbolinks makes navigating your web application faster".freeze
 
@@ -28,4 +33,14 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<turbolinks-source>.freeze, ["~> 5.2"])
   end
+=======
+  s.rubygems_version = "2.7.6".freeze
+  s.summary = "Turbolinks makes navigating your web application faster".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+
+  s.specification_version = 4
+
+  s.add_runtime_dependency(%q<turbolinks-source>.freeze, ["~> 5.2".freeze])
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end

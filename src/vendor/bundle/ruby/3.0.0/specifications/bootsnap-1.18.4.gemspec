@@ -4,7 +4,11 @@
 
 Gem::Specification.new do |s|
   s.name = "bootsnap".freeze
+<<<<<<< HEAD
   s.version = "1.18.4"
+=======
+  s.version = "1.18.4".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "allowed_push_host" => "https://rubygems.org", "bug_tracker_uri" => "https://github.com/Shopify/bootsnap/issues", "changelog_uri" => "https://github.com/Shopify/bootsnap/blob/main/CHANGELOG.md", "source_code_uri" => "https://github.com/Shopify/bootsnap" } if s.respond_to? :metadata=
@@ -20,6 +24,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/Shopify/bootsnap".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.6.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "Boot large ruby/rails apps faster".freeze
 
@@ -34,4 +39,14 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<msgpack>.freeze, ["~> 1.2"])
   end
+=======
+  s.rubygems_version = "3.5.16".freeze
+  s.summary = "Boot large ruby/rails apps faster".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+
+  s.specification_version = 4
+
+  s.add_runtime_dependency(%q<msgpack>.freeze, ["~> 1.2".freeze])
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end

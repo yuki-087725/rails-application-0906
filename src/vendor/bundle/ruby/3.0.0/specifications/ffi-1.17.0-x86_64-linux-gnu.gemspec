@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "ffi".freeze
+<<<<<<< HEAD
   s.version = "1.17.0"
+=======
+  s.version = "1.17.0".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
   s.platform = "x86_64-linux-gnu".freeze
 
   s.required_rubygems_version = Gem::Requirement.new(">= 3.3.22".freeze) if s.respond_to? :required_rubygems_version=
@@ -17,6 +21,7 @@ Gem::Specification.new do |s|
   s.licenses = ["BSD-3-Clause".freeze]
   s.rdoc_options = ["--exclude=ext/ffi_c/.*\\.o$".freeze, "--exclude=ffi_c\\.(bundle|so)$".freeze]
   s.required_ruby_version = Gem::Requirement.new([">= 2.5".freeze, "< 3.4.dev".freeze])
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "Ruby FFI".freeze
 
@@ -37,4 +42,17 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rake-compiler-dock>.freeze, ["~> 1.0"])
     s.add_dependency(%q<rspec>.freeze, ["~> 2.14.1"])
   end
+=======
+  s.rubygems_version = "3.3.26".freeze
+  s.summary = "Ruby FFI".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+
+  s.specification_version = 4
+
+  s.add_development_dependency(%q<rake>.freeze, ["~> 13.0".freeze])
+  s.add_development_dependency(%q<rake-compiler>.freeze, ["~> 1.1".freeze])
+  s.add_development_dependency(%q<rake-compiler-dock>.freeze, ["~> 1.0".freeze])
+  s.add_development_dependency(%q<rspec>.freeze, ["~> 2.14.1".freeze])
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end

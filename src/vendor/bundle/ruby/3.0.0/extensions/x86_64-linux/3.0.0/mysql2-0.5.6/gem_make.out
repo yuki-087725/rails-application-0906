@@ -1,5 +1,9 @@
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.6/ext/mysql2
+<<<<<<< HEAD
 /usr/local/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.0.0 extconf.rb
+=======
+/usr/local/bin/ruby extconf.rb
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for rb_gc_mark_movable()... yes
@@ -30,10 +34,17 @@ Setting libpath to /usr/lib/x86_64-linux-gnu/
 creating Makefile
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.6/ext/mysql2
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20240911-8-kmt2y8 sitelibdir\=./.gem.20240911-8-kmt2y8 clean
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.6/ext/mysql2
 make DESTDIR\= sitearchdir\=./.gem.20240911-8-kmt2y8 sitelibdir\=./.gem.20240911-8-kmt2y8
+=======
+make DESTDIR\= sitearchdir\=./.gem.20240910-1-4d4ab7 sitelibdir\=./.gem.20240910-1-4d4ab7 clean
+
+current directory: /app/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.6/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240910-1-4d4ab7 sitelibdir\=./.gem.20240910-1-4d4ab7
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 compiling client.c
 compiling infile.c
 compiling mysql2_ext.c
@@ -42,5 +53,13 @@ compiling statement.c
 linking shared-object mysql2/mysql2.so
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.6/ext/mysql2
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20240911-8-kmt2y8 sitelibdir\=./.gem.20240911-8-kmt2y8 install
 /usr/bin/install -c -m 0755 mysql2.so ./.gem.20240911-8-kmt2y8/mysql2
+=======
+make DESTDIR\= sitearchdir\=./.gem.20240910-1-4d4ab7 sitelibdir\=./.gem.20240910-1-4d4ab7 install
+/usr/bin/install -c -m 0755 mysql2.so ./.gem.20240910-1-4d4ab7/mysql2
+
+current directory: /app/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.6/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240910-1-4d4ab7 sitelibdir\=./.gem.20240910-1-4d4ab7 clean
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)

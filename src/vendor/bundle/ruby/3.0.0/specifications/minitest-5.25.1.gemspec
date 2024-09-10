@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "minitest".freeze
+<<<<<<< HEAD
   s.version = "5.25.1"
+=======
+  s.version = "5.25.1".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/minitest/minitest/issues", "changelog_uri" => "https://github.com/minitest/minitest/blob/master/History.rdoc", "homepage_uri" => "https://github.com/minitest/minitest" } if s.respond_to? :metadata=
@@ -19,6 +23,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--main".freeze, "README.rdoc".freeze]
   s.required_ruby_version = Gem::Requirement.new([">= 2.6".freeze, "< 4.0".freeze])
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "minitest provides a complete suite of testing facilities supporting TDD, BDD, mocking, and benchmarking".freeze
 
@@ -35,4 +40,15 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rdoc>.freeze, [">= 4.0", "< 7"])
     s.add_dependency(%q<hoe>.freeze, ["~> 4.2"])
   end
+=======
+  s.rubygems_version = "3.5.15".freeze
+  s.summary = "minitest provides a complete suite of testing facilities supporting TDD, BDD, mocking, and benchmarking".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+
+  s.specification_version = 4
+
+  s.add_development_dependency(%q<rdoc>.freeze, [">= 4.0".freeze, "< 7".freeze])
+  s.add_development_dependency(%q<hoe>.freeze, ["~> 4.2".freeze])
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end

@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "thor".freeze
+<<<<<<< HEAD
   s.version = "1.3.2"
+=======
+  s.version = "1.3.2".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/rails/thor/issues", "changelog_uri" => "https://github.com/rails/thor/releases/tag/v1.3.2", "documentation_uri" => "http://whatisthor.com/", "rubygems_mfa_required" => "true", "source_code_uri" => "https://github.com/rails/thor/tree/v1.3.2", "wiki_uri" => "https://github.com/rails/thor/wiki" } if s.respond_to? :metadata=
@@ -17,6 +21,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://whatisthor.com/".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.6.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "Thor is a toolkit for building powerful command-line interfaces.".freeze
 
@@ -31,4 +36,14 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<bundler>.freeze, [">= 1.0", "< 3"])
   end
+=======
+  s.rubygems_version = "3.5.11".freeze
+  s.summary = "Thor is a toolkit for building powerful command-line interfaces.".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+
+  s.specification_version = 4
+
+  s.add_development_dependency(%q<bundler>.freeze, [">= 1.0".freeze, "< 3".freeze])
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end

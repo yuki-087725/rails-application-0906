@@ -1,5 +1,9 @@
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.3/ext/nio4r
+<<<<<<< HEAD
 /usr/local/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.0.0 extconf.rb
+=======
+/usr/local/bin/ruby extconf.rb
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 checking for unistd.h... yes
 checking for rb_io_descriptor()... no
 checking for linux/aio_abi.h... yes
@@ -13,10 +17,17 @@ checking for sys/resource.h... yes
 creating Makefile
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.3/ext/nio4r
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20240911-8-g71kre sitelibdir\=./.gem.20240911-8-g71kre clean
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.3/ext/nio4r
 make DESTDIR\= sitearchdir\=./.gem.20240911-8-g71kre sitelibdir\=./.gem.20240911-8-g71kre
+=======
+make DESTDIR\= sitearchdir\=./.gem.20240910-1-z69zc0 sitelibdir\=./.gem.20240910-1-z69zc0 clean
+
+current directory: /app/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.3/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240910-1-z69zc0 sitelibdir\=./.gem.20240910-1-z69zc0
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 compiling bytebuffer.c
 compiling monitor.c
 compiling nio4r_ext.c
@@ -69,5 +80,13 @@ compiling selector.c
 linking shared-object nio4r_ext.so
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.3/ext/nio4r
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20240911-8-g71kre sitelibdir\=./.gem.20240911-8-g71kre install
 /usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20240911-8-g71kre
+=======
+make DESTDIR\= sitearchdir\=./.gem.20240910-1-z69zc0 sitelibdir\=./.gem.20240910-1-z69zc0 install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20240910-1-z69zc0
+
+current directory: /app/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.3/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240910-1-z69zc0 sitelibdir\=./.gem.20240910-1-z69zc0 clean
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)

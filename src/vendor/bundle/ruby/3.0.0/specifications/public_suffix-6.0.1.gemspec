@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "public_suffix".freeze
+<<<<<<< HEAD
   s.version = "6.0.1"
+=======
+  s.version = "6.0.1".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/weppos/publicsuffix-ruby/issues", "changelog_uri" => "https://github.com/weppos/publicsuffix-ruby/blob/master/CHANGELOG.md", "documentation_uri" => "https://rubydoc.info/gems/public_suffix/6.0.1", "homepage_uri" => "https://simonecarletti.com/code/publicsuffix-ruby", "source_code_uri" => "https://github.com/weppos/publicsuffix-ruby/tree/v6.0.1" } if s.respond_to? :metadata=
@@ -17,8 +21,15 @@ Gem::Specification.new do |s|
   s.homepage = "https://simonecarletti.com/code/publicsuffix-ruby".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 3.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "Domain name parser based on the Public Suffix List.".freeze
 
   s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.5.11".freeze
+  s.summary = "Domain name parser based on the Public Suffix List.".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end

@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "matrix".freeze
+<<<<<<< HEAD
   s.version = "0.4.2"
+=======
+  s.version = "0.4.2".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
@@ -15,8 +19,15 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/ruby/matrix".freeze
   s.licenses = ["Ruby".freeze, "BSD-2-Clause".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.5.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "An implementation of Matrix and Vector classes.".freeze
 
   s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.3.0.dev".freeze
+  s.summary = "An implementation of Matrix and Vector classes.".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end

@@ -4,7 +4,11 @@
 
 Gem::Specification.new do |s|
   s.name = "mysql2".freeze
+<<<<<<< HEAD
   s.version = "0.5.6"
+=======
+  s.version = "0.5.6".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/brianmario/mysql2/issues", "changelog_uri" => "https://github.com/brianmario/mysql2/releases/tag/0.5.6", "documentation_uri" => "https://www.rubydoc.info/gems/mysql2/0.5.6", "homepage_uri" => "https://github.com/brianmario/mysql2", "msys2_mingw_dependencies" => "libmariadbclient", "source_code_uri" => "https://github.com/brianmario/mysql2/tree/0.5.6" } if s.respond_to? :metadata=
@@ -18,8 +22,15 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--charset=UTF-8".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.0.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "A simple, fast Mysql library for Ruby, binding to libmysql".freeze
 
   s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.6.0.dev".freeze
+  s.summary = "A simple, fast Mysql library for Ruby, binding to libmysql".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end

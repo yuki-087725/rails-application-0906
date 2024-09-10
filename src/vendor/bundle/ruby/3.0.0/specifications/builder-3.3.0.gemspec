@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "builder".freeze
+<<<<<<< HEAD
   s.version = "3.3.0"
+=======
+  s.version = "3.3.0".freeze
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/rails/builder/issues", "changelog_uri" => "https://github.com/rails/builder/blob/master/CHANGES", "documentation_uri" => "https://www.rubydoc.info/gems/builder/3.3.0", "homepage_uri" => "https://github.com/rails/builder", "source_code_uri" => "https://github.com/rails/builder/tree/v3.3.0" } if s.respond_to? :metadata=
@@ -15,8 +19,15 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/rails/builder".freeze
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--title".freeze, "Builder -- Easy XML Building".freeze, "--main".freeze, "README.rdoc".freeze, "--line-numbers".freeze]
+<<<<<<< HEAD
   s.rubygems_version = "3.3.22".freeze
   s.summary = "Builders for MarkUp.".freeze
 
   s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.5.9".freeze
+  s.summary = "Builders for MarkUp.".freeze
+
+  s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+>>>>>>> 7eadfd9 (rubyバージョン3.0.3に変更)
 end
