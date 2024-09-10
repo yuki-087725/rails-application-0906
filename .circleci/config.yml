@@ -41,9 +41,6 @@ jobs:
       #     command: bundle clean --force
       - ruby/install-deps
       - run:
-          name: Install dependencies
-          command: bundle install
-      - run:
           name: Database create
           command: bundle exec rails db:create
       - run:
