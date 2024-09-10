@@ -35,6 +35,9 @@ jobs:
           command: bundle clean --force
       - ruby/install-deps
       - run:
+          name: Install Bundler
+          command: gem install bundler:2.5.18     
+      - run:
           name: Install dependencies
           command: bundle install
       - run:
