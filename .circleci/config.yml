@@ -37,12 +37,6 @@ jobs:
           path: ~/rails-application-0906
       - run:
           name: Install Bundler
-          command: gem install bundler -v 2.5.18
-      - run:
-          name: Bundle Install
-          command: bundle install
-      - run:
-          name: Install Bundler
           command: gem install bundler:2.5.18     
       - run:
           name: Install dependencies
