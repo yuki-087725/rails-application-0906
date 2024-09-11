@@ -11,15 +11,20 @@ RUN gem install bundler -v '2.5.18' && \
 RUN bundle config set path '/path/to/secure/directory' && \
     bundle config set deployment 'true'
 
+# 依存関係のインストール
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+# 依存関係のインストール
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
 # ディレクトリを作成
 RUN mkdir -p /path/to/secure/directory
 
 # パーミッションを変更
 RUN chmod o-w /path/to/secure/directory && \
     chmod +t /path/to/secure/directory
-
-# gemをインストール
-RUN bundle install
 
 # Node.jsとYarnのインストール
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
