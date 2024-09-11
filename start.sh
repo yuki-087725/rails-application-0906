@@ -1,4 +1,5 @@
 #!/bin/sh
+cp .env.production .env
 
 if [ "${RAILS_ENV}" = "production" ]
 then
