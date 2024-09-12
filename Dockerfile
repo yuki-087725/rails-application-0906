@@ -21,11 +21,17 @@ RUN chmod o-w /path/to/secure/directory && \
 # gemをインストール
 RUN bundle install
 
-# Node.jsとYarnのインストール
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor -o /usr/share/keyrings/yarn-archive-keyring.gpg && \
+# NodeSourceリポジトリを追加して、Node.jsの最新バージョンを取得するための設定を行う
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    # YarnのGPGキーをダウンロードして、信頼できるキーリングに追加する
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor -o /usr/share/keyrings/yarn-archive-keyring.gpg && \
+    # YarnのリポジトリをAPTのソースリストに追加する
     echo "deb [signed-by=/usr/share/keyrings/yarn-archive-keyring.gpg] https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    # パッケージリストを更新する
     apt-get update -qq && \
-    apt-get install -y nodejs=18.20.4 yarn
+    # 特定のバージョンのNode.jsとYarnをインストールする
+    apt-get install -y nodejs=18.20.4-1nodesource1 yarn
+
 
 # Railsのインストールを追加
 RUN gem install rails
