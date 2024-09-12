@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "rexml".freeze
+<<<<<<< HEAD
   s.version = "3.3.7".freeze
+=======
+  s.version = "3.3.7"
+>>>>>>> 6795500 (bundle のインストール先変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "changelog_uri" => "https://github.com/ruby/rexml/releases/tag/v3.3.7" } if s.respond_to? :metadata=
@@ -18,8 +22,15 @@ Gem::Specification.new do |s|
   s.licenses = ["BSD-2-Clause".freeze]
   s.rdoc_options = ["--main".freeze, "README.md".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.5.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.6.0.dev".freeze
   s.summary = "An XML toolkit for Ruby".freeze
 
   s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.3.22".freeze
+  s.summary = "An XML toolkit for Ruby".freeze
+
+  s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+>>>>>>> 6795500 (bundle のインストール先変更)
 end

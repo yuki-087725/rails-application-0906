@@ -4,7 +4,11 @@
 
 Gem::Specification.new do |s|
   s.name = "racc".freeze
+<<<<<<< HEAD
   s.version = "1.8.1".freeze
+=======
+  s.version = "1.8.1"
+>>>>>>> 6795500 (bundle のインストール先変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "changelog_uri" => "https://github.com/ruby/racc/releases" } if s.respond_to? :metadata=
@@ -21,8 +25,15 @@ Gem::Specification.new do |s|
   s.licenses = ["Ruby".freeze, "BSD-2-Clause".freeze]
   s.rdoc_options = ["--main".freeze, "README.rdoc".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.5".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.5.0.dev".freeze
   s.summary = "Racc is an LALR(1) parser generator".freeze
 
   s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.3.22".freeze
+  s.summary = "Racc is an LALR(1) parser generator".freeze
+
+  s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+>>>>>>> 6795500 (bundle のインストール先変更)
 end

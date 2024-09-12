@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "rake".freeze
+<<<<<<< HEAD
   s.version = "13.2.1".freeze
+=======
+  s.version = "13.2.1"
+>>>>>>> 6795500 (bundle のインストール先変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/ruby/rake/issues", "changelog_uri" => "https://github.com/ruby/rake/blob/v13.2.1/History.rdoc", "documentation_uri" => "https://ruby.github.io/rake", "source_code_uri" => "https://github.com/ruby/rake/tree/v13.2.1" } if s.respond_to? :metadata=
@@ -19,8 +23,15 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--main".freeze, "README.rdoc".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.3".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.6.0.dev".freeze
   s.summary = "Rake is a Make-like program implemented in Ruby".freeze
 
   s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.3.22".freeze
+  s.summary = "Rake is a Make-like program implemented in Ruby".freeze
+
+  s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+>>>>>>> 6795500 (bundle のインストール先変更)
 end

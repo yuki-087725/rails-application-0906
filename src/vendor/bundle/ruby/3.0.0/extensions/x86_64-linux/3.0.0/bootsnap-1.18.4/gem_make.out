@@ -1,5 +1,9 @@
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.18.4/ext/bootsnap
+<<<<<<< HEAD
 /usr/local/bin/ruby extconf.rb
+=======
+/usr/local/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.0.0 extconf.rb
+>>>>>>> 6795500 (bundle のインストール先変更)
 checking for fdatasync() in unistd.h... yes
 checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
 checking for whether -O3 is accepted as CFLAGS... yes
@@ -7,16 +11,28 @@ checking for whether -std=c99 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.18.4/ext/bootsnap
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20240910-1-bzh1sz sitelibdir\=./.gem.20240910-1-bzh1sz clean
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.18.4/ext/bootsnap
 make DESTDIR\= sitearchdir\=./.gem.20240910-1-bzh1sz sitelibdir\=./.gem.20240910-1-bzh1sz
+=======
+make DESTDIR\= sitearchdir\=./.gem.20240911-7-ch44kx sitelibdir\=./.gem.20240911-7-ch44kx clean
+
+current directory: /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240911-7-ch44kx sitelibdir\=./.gem.20240911-7-ch44kx
+>>>>>>> 6795500 (bundle のインストール先変更)
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.so
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.18.4/ext/bootsnap
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20240910-1-bzh1sz sitelibdir\=./.gem.20240910-1-bzh1sz install
 /usr/bin/install -c -m 0755 bootsnap.so ./.gem.20240910-1-bzh1sz/bootsnap
 
 current directory: /app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.18.4/ext/bootsnap
 make DESTDIR\= sitearchdir\=./.gem.20240910-1-bzh1sz sitelibdir\=./.gem.20240910-1-bzh1sz clean
+=======
+make DESTDIR\= sitearchdir\=./.gem.20240911-7-ch44kx sitelibdir\=./.gem.20240911-7-ch44kx install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20240911-7-ch44kx/bootsnap
+>>>>>>> 6795500 (bundle のインストール先変更)

@@ -4,7 +4,11 @@
 
 Gem::Specification.new do |s|
   s.name = "nio4r".freeze
+<<<<<<< HEAD
   s.version = "2.7.3".freeze
+=======
+  s.version = "2.7.3"
+>>>>>>> 6795500 (bundle のインストール先変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/socketry/nio4r/issues", "changelog_uri" => "https://github.com/socketry/nio4r/blob/main/changes.md", "documentation_uri" => "https://www.rubydoc.info/gems/nio4r", "funding_uri" => "https://github.com/sponsors/ioquatix/", "source_code_uri" => "https://github.com/socketry/nio4r.git", "wiki_uri" => "https://github.com/socketry/nio4r/wiki" } if s.respond_to? :metadata=
@@ -17,8 +21,15 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/socketry/nio4r".freeze
   s.licenses = ["MIT".freeze, "BSD-2-Clause".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.4".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.5.9".freeze
   s.summary = "New IO for Ruby".freeze
 
   s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.3.22".freeze
+  s.summary = "New IO for Ruby".freeze
+
+  s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+>>>>>>> 6795500 (bundle のインストール先変更)
 end

@@ -4,7 +4,11 @@
 
 Gem::Specification.new do |s|
   s.name = "puma".freeze
+<<<<<<< HEAD
   s.version = "5.6.8".freeze
+=======
+  s.version = "5.6.8"
+>>>>>>> 6795500 (bundle のインストール先変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/puma/puma/issues", "changelog_uri" => "https://github.com/puma/puma/blob/master/History.md", "homepage_uri" => "https://puma.io", "source_code_uri" => "https://github.com/puma/puma" } if s.respond_to? :metadata=
@@ -19,6 +23,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://puma.io".freeze
   s.licenses = ["BSD-3-Clause".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.2".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.5.3".freeze
   s.summary = "Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby/Rack applications".freeze
 
@@ -27,4 +32,20 @@ Gem::Specification.new do |s|
   s.specification_version = 4
 
   s.add_runtime_dependency(%q<nio4r>.freeze, ["~> 2.0".freeze])
+=======
+  s.rubygems_version = "3.3.22".freeze
+  s.summary = "Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby/Rack applications".freeze
+
+  s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+
+  if s.respond_to? :specification_version then
+    s.specification_version = 4
+  end
+
+  if s.respond_to? :add_runtime_dependency then
+    s.add_runtime_dependency(%q<nio4r>.freeze, ["~> 2.0"])
+  else
+    s.add_dependency(%q<nio4r>.freeze, ["~> 2.0"])
+  end
+>>>>>>> 6795500 (bundle のインストール先変更)
 end

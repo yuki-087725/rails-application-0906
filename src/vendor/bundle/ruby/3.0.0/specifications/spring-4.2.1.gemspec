@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "spring".freeze
+<<<<<<< HEAD
   s.version = "4.2.1".freeze
+=======
+  s.version = "4.2.1"
+>>>>>>> 6795500 (bundle のインストール先変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "rubygems_mfa_required" => "true" } if s.respond_to? :metadata=
@@ -17,8 +21,15 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/rails/spring".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.7.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.3.7".freeze
   s.summary = "Rails application preloader".freeze
 
   s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.3.22".freeze
+  s.summary = "Rails application preloader".freeze
+
+  s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+>>>>>>> 6795500 (bundle のインストール先変更)
 end
