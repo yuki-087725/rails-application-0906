@@ -25,7 +25,12 @@ RUN bundle install
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
     apt-get update -qq && \
-    apt-get install -y nodejs=14.x yarn
+    # apt-keyの警告を回避するためにgpg --dearmorを使用
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor -o /usr/share/keyrings/yarn-archive-keyring.gpg && \
+    echo "deb [signed-by=/usr/share/keyrings/yarn-archive-keyring.gpg] https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    apt-get update -qq && \
+    # Node.jsのバージョンを18.xに設定
+    apt-get install -y nodejs=18.x yarn
 
 # Railsのインストールを追加
 RUN gem install rails
