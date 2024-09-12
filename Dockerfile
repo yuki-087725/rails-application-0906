@@ -15,10 +15,6 @@ RUN bundle config set path '/path/to/secure/directory' && \
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
-# 依存関係のインストール
-COPY Gemfile Gemfile.lock ./
-RUN bundle install
-
 # ディレクトリを作成
 RUN mkdir -p /path/to/secure/directory
 
