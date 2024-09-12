@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "tilt".freeze
+<<<<<<< HEAD
   s.version = "2.4.0".freeze
+=======
+  s.version = "2.4.0"
+>>>>>>> 6795500 (bundle のインストール先変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/jeremyevans/tilt/issues", "changelog_uri" => "https://github.com/jeremyevans/tilt/blob/master/CHANGELOG.md", "mailing_list_uri" => "https://github.com/jeremyevans/tilt/discussions", "source_code_uri" => "https://github.com/jeremyevans/tilt" } if s.respond_to? :metadata=
@@ -18,8 +22,15 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--line-numbers".freeze, "--inline-source".freeze, "--title".freeze, "Tilt".freeze, "--main".freeze, "Tilt".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.5.9".freeze
   s.summary = "Generic interface to multiple Ruby template engines".freeze
 
   s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.3.22".freeze
+  s.summary = "Generic interface to multiple Ruby template engines".freeze
+
+  s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+>>>>>>> 6795500 (bundle のインストール先変更)
 end

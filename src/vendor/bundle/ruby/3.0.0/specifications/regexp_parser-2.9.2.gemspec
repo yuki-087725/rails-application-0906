@@ -3,7 +3,11 @@
 
 Gem::Specification.new do |s|
   s.name = "regexp_parser".freeze
+<<<<<<< HEAD
   s.version = "2.9.2".freeze
+=======
+  s.version = "2.9.2"
+>>>>>>> 6795500 (bundle のインストール先変更)
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "bug_tracker_uri" => "https://github.com/ammar/regexp_parser/issues", "changelog_uri" => "https://github.com/ammar/regexp_parser/blob/master/CHANGELOG.md", "homepage_uri" => "https://github.com/ammar/regexp_parser", "rubygems_mfa_required" => "true", "source_code_uri" => "https://github.com/ammar/regexp_parser", "wiki_uri" => "https://github.com/ammar/regexp_parser/wiki" } if s.respond_to? :metadata=
@@ -15,8 +19,15 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/ammar/regexp_parser".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.0.0".freeze)
+<<<<<<< HEAD
   s.rubygems_version = "3.5.3".freeze
   s.summary = "Scanner, lexer, parser for ruby's regular expressions".freeze
 
   s.installed_by_version = "3.5.18".freeze if s.respond_to? :installed_by_version
+=======
+  s.rubygems_version = "3.3.22".freeze
+  s.summary = "Scanner, lexer, parser for ruby's regular expressions".freeze
+
+  s.installed_by_version = "3.3.22" if s.respond_to? :installed_by_version
+>>>>>>> 6795500 (bundle のインストール先変更)
 end
