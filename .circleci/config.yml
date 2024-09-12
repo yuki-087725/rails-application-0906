@@ -37,13 +37,10 @@ jobs:
           path: ~/rails-application-0906
       - run:
           name: Install Bundler
-          command: gem install bundler:2.5.18     
+          command: gem install bundler -v 2.5.18
       - run:
           name: Bundle Install
           command: bundle install
-      - run:
-          name: Database create
-          command: bundle exec rails db:create
       - run:
           name: Database setup
           command: bundle exec rails db:migrate
